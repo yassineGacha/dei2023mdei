@@ -1,0 +1,1054 @@
+/* General styles */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #edecf8;
+  display: initial;
+
+  /* Set the desired background color for the whole page */
+}
+
+:root {
+  --min-color: #fff;
+  --sc-color: #3ec1d5;
+  --th-color: #333;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 0.5rem;
+  font-size: 66%;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 3.8rem;
+  font-size: 1.8rem;
+  border: 0.1rem solid var(--sc-color);
+  outline: 0;
+  background: var(--sc-color);
+  border-radius: 1rem;
+  cursor: pointer;
+  text-align: center;
+  color: var(--min-color);
+}
+
+.btn:hover {
+  background: none;
+  color: var(--sc-color);
+}
+
+.heading {
+  margin: 5rem auto;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 3.5rem;
+  text-align: center;
+  color: var(--th-color);
+}
+
+.heading div {
+  display: inline-block;
+  border-bottom: 0.2rem solid var(--th-color);
+  width: 15rem;
+}
+
+.heading div:hover {
+  width: 25rem;
+}
+
+section {
+  padding: 1rem 4%;
+  margin-bottom: 1rem;
+}
+
+section h1 {
+  font-size: 45px;
+}
+
+section h2 {
+  font-size: 35px;
+
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 3%;
+  background: rgba(36, 34, 40, 0.6);
+  z-index: 1001;
+}
+
+header .logo {
+  font-size: 3.5rem;
+  color: var(--min-color);
+  padding: 0.4rem;
+}
+
+header .navbar a {
+  margin: 0 0.8rem;
+  font-size: 1.9rem;
+  color: var(--min-color);
+  padding: 0.4rem;
+}
+
+header .navbar a:hover,
+header .fa-bars:hover {
+  color: var(--sc-color);
+}
+
+header .fa-bars {
+  font-size: 2.8rem;
+  color: var(--min-color);
+  cursor: pointer;
+  display: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  max-width: 100%;
+  /* Adjust this value as needed */
+
+
+}
+
+.home {
+  text-align: center;
+  background: url(../images/iot1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Center content horizontally */
+  min-height: 60vh;
+  min-width: 100%;
+}
+
+.home .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--min-color);
+  text-align: center;
+  margin-bottom: 20px;
+  margin: 30px 5%;
+  /* Adjust margins for responsiveness */
+}
+
+.home .hide-content {
+  display: none;
+}
+
+.home .content h3 {
+  font-size: 4.3rem;
+  margin-top: 20px;
+  white-space: nowrap;
+}
+
+.home .content h2 {
+  font-size: 2.1rem;
+  margin-top: 00px;
+}
+
+.home .content h1 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.home .content p {
+  font-size: 1.8rem;
+  margin: 1rem 0;
+}
+
+.home .content a.btn {
+  font-size: 1.8rem;
+  /* Adjust font size */
+  padding: 0.6rem 2.5rem;
+  /* Adjust padding as needed */
+}
+
+
+.workshop {
+  display: flex;
+  /* Display the two divs side by side */
+  justify-content: space-between;
+  /* Create space between the divs */
+  align-items: flex-start;
+  /* Align divs at the top vertically */
+  margin: 40px 0;
+  /* Add some margin above and below the section */
+}
+
+.left-content {
+  display: flex;
+  /* Display the two divs side by side */
+  /*  width: 66.66%; Display the content side by side */
+  align-items: center;
+  /* Align content vertically in the center */
+  width: 45%;
+  /* Adjust the width as needed */
+}
+
+.right-content {
+  display: flex;
+  /*width: 33.33%; Display the content side by side */
+  align-items: center;
+  /* Align content vertically in the center */
+  width: 40%;
+  /* Adjust the width as needed */
+}
+
+.left-content img {
+  display: block;
+  /* Make the logos block elements to adjust their size */
+  width: 210px;
+  /* Set maximum width to ensure logos don't overflow */
+  height: 230px;
+  /* Adjust the maximum height to reduce the logo size */
+  margin-right: 20px;
+  /* Add some space between the logo and text */
+}
+
+.right-content img {
+  display: block;
+  /* Make the logos block elements to adjust their size */
+  width: 150px;
+  /* Set maximum width to ensure logos don't overflow */
+  height: 200px;
+  /* Adjust the maximum height to reduce the logo size */
+  margin-right: 20px;
+  /* Add some space between the logo and text */
+}
+
+.left-content p,
+.right-content p {
+  flex: 1;
+  /* Allow the text to expand and fill the available space */
+  font-family: "Arial", sans-serif;
+  /* Change the font family here */
+  font-size: 20px;
+  /* Change the font size here */
+  line-height: 1.6;
+  /* Change the line spacing here */
+  text-align: justify;
+  /* Justify the text */
+  color: rgb(11, 11, 49);
+  ;
+}
+
+/* Adjust the width as needed */
+.left-content {
+  width: 61%;
+  /* 2/3 of the total width */
+}
+
+.right-content {
+  width: 35%;
+  /* 1/3 of the total width */
+}
+
+/* Call for paper section */
+.CFP {
+  padding: 3rem 9%;
+}
+
+.CFP .heading {
+  margin: 5rem auto;
+  font-size: 2.5rem;
+  text-align: center;
+  color: var(--th-color);
+}
+
+.CFP .heading div {
+  display: inline-block;
+  border-bottom: 0.2rem solid var(--th-color);
+  width: 15rem;
+}
+
+.CFP .heading div:hover {
+  width: 20rem;
+}
+
+.CFP .content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.CFP .custom-icon {
+  font-size: 168px;
+  color: rgb(11, 11, 49);
+  margin-right: 160px;
+}
+
+.CFP .content {
+  font-size: 25px;
+  color: rgb(11, 11, 49);
+  margin-left: 40px;
+}
+
+.CFP .content h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.CFP .content ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.CFP .content li {
+  margin-bottom: 10px;
+}
+
+/* Important dates section */
+.impdate {
+  text-align: left;
+}
+
+/* If you want to align the content to the right within the section */
+.impdate .content-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+/* Adjust the margins as needed */
+.impdate .content {
+  font-size: 25px;
+  color: rgb(214, 49, 87);
+  margin-right: 15px;
+  margin-left: 200px;
+}
+
+.impdate .custom-icon {
+  font-size: 168px;
+  color: rgb(11, 11, 49);
+  margin-left: 500px;
+}
+
+/* Submission section */
+#subb {
+  text-align: left;
+  text-justify: right;
+}
+
+/* If you want to align the content to the right within the section */
+#subb .content-wrapper {
+  display: flex;
+  flex-direction: column;
+  /* Change the flex direction to column */
+  align-items: center;
+  margin-top: 2rem;
+}
+
+#subb .content {
+  flex: 1;
+  font-size: 25px;
+  color: rgb(10, 10, 10);
+  margin-bottom: 20px;
+  /* Add some space between the icon and text */
+}
+
+#subb .fa-send-o {
+  font-size: 148px;
+  color: rgb(11, 11, 49);
+}
+
+#subb .fa-send-o.toggled {
+  color: rgb(62, 120, 82);
+  /* Change the color when the icon is toggled */
+  /* Add any other styles you want for the toggled icon */
+}
+
+/* program commite*/
+.PC {
+  padding: 3rem 9%;
+}
+
+.PC .heading {
+  margin: 5rem auto;
+  font-size: 2.5rem;
+  text-align: center;
+  color: var(--th-color);
+}
+
+.PC .heading div {
+  display: inline-block;
+  border-bottom: 0.2rem solid var(--th-color);
+  width: 15rem;
+}
+
+.PC .heading div:hover {
+  width: 25rem;
+}
+
+.PC .content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.PC .content {
+  font-size: 25px;
+  color: rgb(11, 11, 49);
+  margin-left: 40px;
+}
+
+.PC .content h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.PC .content ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.PC .content li {
+  margin-bottom: 10px;
+}
+
+#PC .fa-edit {
+  font-size: 148px;
+  color: rgb(11, 11, 49);
+  margin-left: 500px;
+}
+
+.phair {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.phair .heading {
+  margin: 5rem 0;
+  font-size: 2.5rem;
+  text-align: center;
+  color: var(--th-color);
+}
+
+.phair .content-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.phair .Tak-content,
+.phair .Abd-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.phair .Abd-content img {
+  max-width: 100%;
+  height: 180px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.phair .Tak-content img {
+  max-width: 100%;
+  height: 180px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.phair p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  text-align: justify;
+  /* Add text justification */
+  text-align-last: left;
+  /* Make sure the last line aligns to the left */
+}
+
+/*
+.pchair{
+  width: 100%;
+}
+.pchair .row{
+
+ background: url(../images/sousse1.jpg);
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-attachment: fixed;
+ position: relative;
+ display: flex;
+ align-items: center;
+ min-height: 70vh;
+} 
+.row::before{
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.pchair .row .team-slider  .box{
+  padding: 0 3%;
+}
+.pchair .team-slider .box .content{
+  background: #222;
+  box-shadow: 0 0.5 0.5 rgba(0, 0, 0, 0.6);
+  text-align: center;
+  padding: 4rem;
+  border-radius: 1rem;
+  height:30rem;
+}
+.pchair .team-slider .box .image img{
+  width: 10rem;
+  height: 7rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 22rem; left: 1rem;
+  border: 0.3rem solid var(--sc-color);
+  
+}
+.pchair .team-slider .box .content h3{
+  font-size: 1.5rem;
+  color: var(--sc-color);
+  margin: 1rem;
+
+}
+.pchair .team-slider .box .content p{
+  color: #fff;
+  font-size: 1.2rem;
+}*/
+
+.ag p {
+  font-size: 28px;
+}
+
+/*
+.footer {
+  background: #797070;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 10rem; /* Adjust the padding values to reduce the space */
+
+.footer {
+  background: rgba(36, 34, 40, 0.6);
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+  gap: 1rem;
+  /* Adjust the gap value to reduce the space */
+  text-align: center;
+  padding: 1rem 1rem;
+  font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+.footer .left-content {
+  display: flex;
+  align-items: center;
+}
+
+.footer .right-content {
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+  gap: 25px;
+  /* Adjust the gap value between the divs in right-content */
+}
+
+.footer .logo1 img {
+  width: 180px;
+  /* Adjust the width of the images as needed */
+  height: 180px;
+  margin-right: 1rem;
+  /* Add margin to separate the images */
+  margin-left: 50px;
+
+}
+
+.footer .logo2 img {
+  width: 430px;
+  /* Adjust the width of the images as needed */
+  height: 200px;
+  margin-right: 1rem;
+  /* Add margin to separate the images */
+  margin-left: 2rem;
+  /* Add margin to separate the images */
+
+}
+
+
+footer .logo-button {
+  display: block;
+  margin-top: 1rem;
+  padding: 2.7rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+/* Customize the first button */
+/* Customize the first button */
+footer .logo1 .logo-button1 {
+  background-color: #082072;
+  color: #FFFFFF;
+  padding: 10px 10px;
+  /* Adjust the padding as per your desired size */
+  font-size: 1rem;
+  text-decoration: none;
+  margin-top: 30px;
+  margin-left: 70px;
+  width: 150px;
+  /* Define the width of the button */
+  height: 40px;
+  /* Define the height of the button */
+}
+
+/* Customize the second button */
+/* Customize the first button */
+footer .logo2 .logo-button2 {
+  background-color: #082072;
+  color: #FFFFFF;
+  padding: 10px 10px;
+  /* Adjust the padding as per your desired size */
+  font-size: 1rem;
+  margin-top: 10px;
+  margin-left: 100px;
+  text-decoration: none;
+  width: 150px;
+  /* Define the width of the button */
+  height: 40px;
+  /* Define the height of the button */
+
+}
+
+.logo-button:hover {
+  background-color: var(--min-color);
+  color: var(--sc-color);
+}
+
+.footer.right-content {
+  text-align: center;
+}
+
+.footer h3 {
+  font-size: 2.5rem;
+  margin: 2rem 0;
+  color: var(--min-color);
+}
+
+.footer p {
+  font-size: 2.6rem;
+  margin: 1rem 0;
+  color: var(--min-color);
+}
+
+.footer i {
+  font-size: 2.6rem;
+  margin: 1rem 0.5rem;
+  color: var(--min-color);
+}
+
+.footer i:hover,
+.footer a:hover {
+  color: var(--sc-color);
+}
+
+.footer a {
+  display: block;
+  font-size: 1.6rem;
+  margin: 1.8rem;
+  color: var(--min-color);
+}
+
+.footer .right-content .link {
+  text-align: center;
+  margin: right 0px;
+}
+
+.footer.right-content .contact {
+  text-align: center;
+  margin-right: 0rem;
+}
+
+/* Media queries */
+@media (max-width: 850px) {
+  header .fa-bars {
+    display: block;
+  }
+
+  header .navbar {
+    position: fixed;
+    /* */
+    top: 1000rem;
+    left: 0;
+    text-align: center;
+    background: rgba(10, 10, 9, 0.6);
+    width: 100%;
+  }
+
+  header .navbar.active {
+    top: 7.5rem;
+  }
+
+  header .navbar a {
+    display: block;
+    margin: 0.3rem 0;
+    padding: 1rem;
+    font-size: 2.6rem;
+    color: var(--min-color);
+  }
+
+  header .navbar a:hover {
+    background: var(--min-color);
+  }
+
+  header,
+  .home,
+  .body {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .home {
+    flex-wrap: wrap;
+    text-align: center;
+    max-width: 100%;
+    padding: 0 5%;
+  }
+
+  .home .image {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 5%;
+  }
+
+  .home .image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .home .content {
+    padding: 2rem;
+  }
+
+  .home .content h3 {
+    font-size: 2.5rem;
+    margin-top: 10px;
+    white-space: normal;
+  }
+
+  .home .content h2 {
+    font-size: 1.8rem;
+  }
+
+  .home .content h1 {
+    font-size: 1.5rem;
+  }
+
+  .home .content a.btn {
+    font-size: 1.5rem;
+    padding: 0.6rem 2.5rem;
+  }
+}
+
+@media (max-width: 650px) {
+  header .fa-bars {
+    display: block;
+  }
+
+  header .navbar {
+    position: fixed;
+    /* */
+    top: 1000rem;
+    left: 0;
+    text-align: center;
+    background: rgba(10, 10, 9, 0.6);
+    width: 100%;
+  }
+
+  header .navbar.active {
+    top: 7.5rem;
+  }
+
+  header .navbar a {
+    display: block;
+    margin: 0.3rem 0;
+    padding: 1rem;
+    font-size: 2.6rem;
+    color: var(--min-color);
+  }
+
+  header .navbar a:hover {
+    background: var(--min-color);
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  header,
+  .home,
+  .body {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .home {
+    text-align: center;
+    background: url(../images/iot1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    display: block;
+    min-height: calc(100vh - 0.5rem);
+  }
+
+  .home .content {
+    position: static;
+    color: var(--min-color);
+    text-align: left;
+    margin: 0;
+    padding: 2rem 5%;
+  }
+
+  .home .content h3 {
+    font-size: 2.5rem;
+    margin-top: 10px;
+    white-space: normal;
+  }
+
+  .home .content h2 {
+    font-size: 1.8rem;
+  }
+
+  .home .content h1 {
+    font-size: 1.5rem;
+  }
+
+  .home .content a.btn {
+    font-size: 1.5rem;
+    padding: 0.6rem 2.5rem;
+  }
+
+  .workshop {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .workshop .left-content,
+  .workshop .right-content {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .workshop .left-content img,
+  .workshop .right-content img {
+    max-width: 100%;
+    height: auto;
+    order: 1;
+    /* Place the image on top */
+  }
+
+  .workshop .left-content p,
+  .workshop .right-content p {
+    order: 2;
+    /* Place the text below the image */
+  }
+
+  * Adjustments for CFP section */ .CFP {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 4%;
+  }
+
+  .CFP .heading {
+    margin: 2rem auto;
+  }
+
+  .CFP .heading h2 {
+    font-size: 2.2rem;
+  }
+
+  .CFP .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .CFP .custom-icon {
+    font-size: 3.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .CFP .content {
+    font-size: 1.8rem;
+    margin: 0;
+  }
+
+  .CFP .content h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .CFP .content ul {
+    list-style: disc;
+    margin-left: 20px;
+  }
+
+  .CFP .content li {
+    margin-bottom: 10px;
+  }
+
+
+
+  /* Adjustments for subb section */
+  .subb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 6%;
+  }
+
+  .subb .heading {
+    margin: 2rem auto;
+  }
+
+  .subb .heading h2 {
+    font-size: 2.2rem;
+  }
+
+  .subb .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .subb .content {
+    font-size: 1.8rem;
+    margin: 0;
+  }
+
+  .subb .content ul {
+    list-style: disc;
+    margin-left: 20px;
+  }
+
+  .subb .content li {
+    margin-bottom: 10px;
+  }
+
+  .subb .fa-send-o {
+    font-size: 3.2rem;
+    margin-top: 1rem;
+  }
+
+  .impdate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 4%;
+  }
+
+  .impdate .custom-icon {
+    display: flex;
+    margin-top: 1rem;
+    margin-left: auto;
+
+    order: 1;
+  }
+
+  .impdate .fa-calendar {
+    font-size: 4.2rem;
+    margin-right: auto;
+
+  }
+
+  .impdate .content-wrapper {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0px;
+    order: 2;
+  }
+
+  .impdate .content {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .impdate .content ul {
+    text-align: left;
+    margin-left: -150px;
+  }
+
+
+  .PC .content-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  #PC .fa-edit {
+    font-size: 148px;
+    margin-left: -100px;
+  }
+
+  .PC .content {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .PC .content ul {
+    text-align: left;
+    margin-left: auto;
+  }
+
+  .PC .content li {
+    margin-bottom: 10px;
+    font-size: 80%;
+  }
+}
