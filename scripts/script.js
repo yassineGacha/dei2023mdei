@@ -2,6 +2,7 @@ let Navbar = document.querySelector('.navbar');
 let Fabars = document.querySelector('.fa-bars');
 const emailElement = document.getElementById('email');
 
+<<<<<<< HEAD
 
 // Initial visibility state (visible)
 let isEmailVisible = true;
@@ -40,6 +41,26 @@ var swiper = new Swiper(".team-slider", {
     },
   });
   $(document).ready(function() {
+=======
+// Initial visibility state (visible)
+let isEmailVisible = true;
+
+Fabars.onclick = (event) => {
+    event.stopPropagation(); // Prevent the click event from propagating to the document
+
+    Navbar.classList.toggle("active");
+    $(".home .content").addClass("hide-content");
+};
+
+// Close the navigation when clicking anywhere on the document
+document.onclick = () => {
+    Navbar.classList.remove("active");
+    $(".home .content").removeClass("hide-content");
+};
+
+
+$(document).ready(function() {
+>>>>>>> master
     const contentDiv = $('.content');
     const scrollThreshold = 5;
 
@@ -83,6 +104,7 @@ document.addEventListener('DOMContentLoaded', function() {
       window.location.href = 'https://easychair.org/account/signin';
   });
 });
+<<<<<<< HEAD
 // Function to toggle email visibility
 function toggleEmail() {
   if (isEmailVisible) {
@@ -96,3 +118,5 @@ function toggleEmail() {
 
 // Set interval to toggle email every 3 seconds (3000 milliseconds)
 setInterval(toggleEmail, 1000);
+=======
+>>>>>>> master
